@@ -10,12 +10,10 @@
 
 set background=dark
 
-if version > 580
 	hi clear
 	if exists("syntax_on")
 		syntax reset
 	endif
-endif
 
 let colors_name = "wombat"
 
@@ -36,13 +34,11 @@ hi SpecialKey	ctermfg=241		ctermbg=235		cterm=none		guifg=#626262	guibg=#2b2b2b	
 hi WarningMsg	ctermfg=203										guifg=#ff5f55
 hi ErrorMsg		ctermfg=196		ctermbg=236		cterm=bold		guifg=#ff2026	guibg=#3a3a3a	gui=bold
 
-" Vim >= 7.0 specific colors
-if version >= 700
 hi CursorLine					ctermbg=236		cterm=none						guibg=#32322f
 hi MatchParen	ctermfg=228		ctermbg=101		cterm=bold		guifg=#eae788	guibg=#857b6f	gui=bold
 hi Pmenu		ctermfg=230		ctermbg=238						guifg=#ffffd7	guibg=#444444
 hi PmenuSel		ctermfg=232		ctermbg=192						guifg=#080808	guibg=#cae982
-endif
+hi ColorColumn					ctermbg=235										guibg=#3B3A32
 
 " Diff highlighting
 hi DiffAdd						ctermbg=17										guibg=#2a0d6a
